@@ -23,9 +23,9 @@ import androidx.navigation.NavController
 import com.aalesia.onerepmax.R
 import com.aalesia.onerepmax.entity.WorkoutEntity
 import com.aalesia.onerepmax.ui.chart.LineGraph
+import com.aalesia.onerepmax.ui.shared.WorkoutItem
 import com.aalesia.onerepmax.ui.theme.OneRepMaxTheme
 import com.aalesia.onerepmax.ui.theme.PrimaryColor
-import com.aalesia.onerepmax.ui.workouts.WorkoutItem
 import com.aalesia.onerepmax.viewmodel.WorkoutDetailsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)

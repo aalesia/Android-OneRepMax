@@ -19,6 +19,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.aalesia.onerepmax.R
 import com.aalesia.onerepmax.entity.WorkoutEntity
+import com.aalesia.onerepmax.ui.shared.WorkoutsContent
 import com.aalesia.onerepmax.ui.theme.OneRepMaxTheme
 import com.aalesia.onerepmax.ui.theme.PrimaryColor
 import com.aalesia.onerepmax.viewmodel.WorkoutsViewModel

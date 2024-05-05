@@ -1,4 +1,4 @@
-package com.aalesia.onerepmax.ui.workouts
+package com.aalesia.onerepmax.ui.shared
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
@@ -19,7 +19,7 @@ import com.aalesia.onerepmax.entity.WorkoutEntity
 import com.aalesia.onerepmax.ui.theme.Typography
 
 @Composable
-internal fun WorkoutsContent(
+fun WorkoutsContent(
     workouts: List<WorkoutEntity>,
     modifier: Modifier = Modifier,
     onWorkoutClick: (WorkoutEntity) -> Unit
