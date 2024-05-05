@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">One Rep Max</string>
+    <string name="title_activity_main">One Rep Max</string>
+    <string name="one_rep_max_record">1 RM Record</string>
+    <string name="lbs">lbs</string>
+    <string name ="weight">Weight</string>
+</resources>
