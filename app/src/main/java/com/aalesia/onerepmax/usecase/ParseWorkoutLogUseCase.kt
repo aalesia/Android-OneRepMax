@@ -50,6 +50,6 @@ class ParseWorkoutLogUseCase {
         val heaviestWeight = sortedRecords.first().weight
         val heaviestWeightReps = sortedRecords.first().reps
 
-        return heaviestWeight * (36 / (37 - heaviestWeightReps))
+        return (heaviestWeight.toFloat() * (36f / (37f - heaviestWeightReps.toFloat()))).toInt()
     }
 }
