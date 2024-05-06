@@ -20,7 +20,6 @@ import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.ValueFormatter
 import java.util.Date
 
-
 @Composable
 fun LineGraph(
     xData: List<Float>,

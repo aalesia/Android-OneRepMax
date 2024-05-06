@@ -7,6 +7,7 @@
 - Material 3
 - Compose NavController
 - MVVM
+- Kotlin Flow
 - UseCase
 - Repository
 - DataSource
