@@ -8,3 +8,5 @@
 - Compose NavController
 - MVVM
 - UseCase
+- Repository
+- DataSource

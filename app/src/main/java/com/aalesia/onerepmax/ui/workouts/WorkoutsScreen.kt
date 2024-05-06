@@ -1,9 +1,13 @@
 package com.aalesia.onerepmax.ui.workouts
 
 import android.net.Uri
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
@@ -19,7 +23,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.aalesia.onerepmax.R
 import com.aalesia.onerepmax.entity.WorkoutEntity
-import com.aalesia.onerepmax.ui.shared.WorkoutsContent
+import com.aalesia.onerepmax.ui.shared.WorkoutItem
 import com.aalesia.onerepmax.ui.theme.OneRepMaxTheme
 import com.aalesia.onerepmax.ui.theme.PrimaryColor
 import com.aalesia.onerepmax.viewmodel.WorkoutsViewModel
@@ -66,5 +70,24 @@ fun WorkoutsScreen(navController: NavController) {
                 }
             }
         )
+    }
+}
+
+@Composable
+fun WorkoutsContent(
+    workouts: List<WorkoutEntity>,
+    modifier: Modifier = Modifier,
+    onWorkoutClick: (WorkoutEntity) -> Unit
+) {
+    LazyColumn(modifier = modifier) {
+        items(workouts) { workout ->
+            WorkoutItem(
+                workout = workout,
+                modifier = Modifier.clickable {
+                    onWorkoutClick(workout)
+                }
+            )
+            HorizontalDivider()
+        }
     }
 }
